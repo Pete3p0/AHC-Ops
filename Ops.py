@@ -4,8 +4,9 @@ import numpy as np
 import pandas as pd
 
 def main_page():
-    st.markdown("# Main page 🎈")
-    st.sidebar.markdown("# Main page 🎈")
+    st.markdown("# Main page")
+    st.sidebar.markdown("# Main page")
+    st.write('This is the first page')
 
 def page2():
     st.markdown("# Page 2 ❄️")
@@ -23,3 +24,5 @@ page_names_to_funcs = {
 
 selected_page = st.sidebar.radio("Select a page", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
+
+
